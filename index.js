@@ -23,9 +23,6 @@ app.use(express.static(path.join(__dirname, '/public/scripts')));
 app.use(express.static(path.join(__dirname, '/public/img')));
 
 app.use('/api/citas-medicas', citasMedicasRouter);
-// app.use('/', (req, res) => {
-//     res.sendFile(path.join(__dirname, '/public/views/index.html'));
-// });
 
 app.use((err, req, res, next) => {
     console.log(err);
