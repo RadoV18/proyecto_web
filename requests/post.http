@@ -1,0 +1,10 @@
+POST http://localhost:3001/api/citas-medicas
+content-type: application/json; charset=utf-8
+
+{
+    "nombre": "TestNombre2",
+    "email": "email@test.co2m",
+    "fecha": "2022-02-03",
+    "asunto": "Cita Medica",
+    "mensaje": "Test2"
+}
