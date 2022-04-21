@@ -1,11 +1,11 @@
-<<<<<<< HEAD
 .navbar{
     background-color: aqua!important;
 }
 
 body{
     background-color: #98f5e1;
-=======
+}
+
 .form-container{
     width: 600px;
     margin: auto;
@@ -13,5 +13,4 @@ body{
 
 .formulario-titulo{
     margin: auto;
->>>>>>> 021a87f0489e2d259a5f81127f823e1e1661fc6b
 }
