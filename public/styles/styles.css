@@ -14,3 +14,13 @@ body{
 .formulario-titulo{
     margin: auto;
 }
+
+.titulo{
+    background-color: aliceblue;
+    border: 4%;
+    border-radius: 3%;
+    border-style: dotted;
+    border-color: black;
+    font-style: italic;
+    width: 50%;
+}
