@@ -3,6 +3,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const citasMedicasRouter = require('./controllers/citasMedicas');
+const path = require('path');
 const app = express();
 
 const mongooseURI = process.env.DATABASE_URI;
@@ -15,9 +16,13 @@ mongoose.connect(mongooseURI)
     })
 
 app.use(morgan('tiny'));
-app.use(express.json())
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '/public')));
 
 app.use('/api/citas-medicas', citasMedicasRouter);
+app.use('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/public/views/index.html'));
+});
 
 app.use((err, req, res, next) => {
     console.log(err);
