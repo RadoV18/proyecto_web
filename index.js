@@ -17,12 +17,14 @@ mongoose.connect(mongooseURI)
 
 app.use(morgan('tiny'));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static(path.join(__dirname, '/public/views')));
+app.use(express.static(path.join(__dirname, '/public/styles')));
+app.use(express.static(path.join(__dirname, '/public/scripts')));
 
 app.use('/api/citas-medicas', citasMedicasRouter);
-app.use('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/public/views/index.html'));
-});
+// app.use('/', (req, res) => {
+//     res.sendFile(path.join(__dirname, '/public/views/index.html'));
+// });
 
 app.use((err, req, res, next) => {
     console.log(err);
