@@ -1,0 +1,7 @@
+Conclusiones:
+
+En conclusión, se aprendió a trabajar en grupos colaborativamente
+para el desarrollo de una página web.
+
+Se utilizó el DOM, HTML, CSS y Bootstrap, además de usar Node y
+MongoDB para el backend y la base de datos
